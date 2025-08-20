@@ -1,0 +1,84 @@
+/* Fondo general */
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Tarjeta del contador */
+.counter-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 320px;
+  transition: transform 0.3s ease;
+}
+
+.counter-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Título */
+.counter-card h2 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+/* Número del contador */
+.count {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 1rem 0;
+  color: #4f46e5;
+  text-shadow: 2px 2px 6px rgba(79, 70, 229, 0.3);
+}
+
+/* Botones */
+.btn-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.btn {
+  padding: 0.7rem 1.2rem;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #fff;
+}
+
+.increment {
+  background: #22c55e;
+}
+
+.increment:hover {
+  background: #16a34a;
+}
+
+.decrement {
+  background: #ef4444;
+}
+
+.decrement:hover {
+  background: #dc2626;
+}
+
+.reset {
+  background: #3b82f6;
+}
+
+.reset:hover {
+  background: #2563eb;
+}
