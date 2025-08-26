@@ -1,0 +1,89 @@
+/* Fondo general del cuerpo de la página */
+body {
+  font-family: "Segoe UI", sans-serif; /* Fuente moderna y legible */
+  background: linear-gradient(135deg, #667eea, #764ba2); /* Degradado en diagonal */
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Altura del 100% del viewport */
+  display: flex; /* Centra el contenido */
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilo de la tarjeta del contador */
+.counter-card {
+  background: #fff; /* Fondo blanco */
+  padding: 2rem; /* Espaciado interno */
+  border-radius: 20px; /* Bordes redondeados */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Sombra para efecto flotante */
+  text-align: center; /* Centra el texto */
+  width: 320px; /* Ancho fijo */
+  transition: transform 0.3s ease; /* Suaviza transformaciones */
+}
+
+/* Efecto al pasar el mouse por encima de la tarjeta */
+.counter-card:hover {
+  transform: translateY(-5px); /* Eleva ligeramente la tarjeta */
+}
+
+/* Título del contador */
+.counter-card h2 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  color: #333; /* Gris oscuro */
+}
+
+/* Estilo del número del contador */
+.count {
+  font-size: 3rem; /* Tamaño grande */
+  font-weight: bold; /* Negrita */
+  margin: 1rem 0;
+  color: #4f46e5; /* Azul intenso */
+  text-shadow: 2px 2px 6px rgba(79, 70, 229, 0.3); /* Sombra suave para resaltar */
+}
+
+/* Agrupación de botones en columna */
+.btn-group {
+  display: flex;
+  flex-direction: column; /* Acomoda botones en vertical */
+  gap: 12px; /* Espacio entre botones */
+}
+
+/* Estilos generales para todos los botones */
+.btn {
+  padding: 0.7rem 1.2rem; /* Espaciado interno */
+  border: none;
+  border-radius: 12px; /* Bordes redondeados */
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #fff; /* Texto blanco */
+}
+
+/* Botón de incrementar (verde) */
+.increment {
+  background: #22c55e; /* Verde claro */
+}
+
+.increment:hover {
+  background: #16a34a; /* Verde más oscuro al pasar el mouse */
+}
+
+/* Botón de decrementar (rojo) */
+.decrement {
+  background: #ef4444; /* Rojo claro */
+}
+
+.decrement:hover {
+  background: #dc2626; /* Rojo más oscuro */
+}
+
+/* Botón de reiniciar (azul) */
+.reset {
+  background: #3b82f6; /* Azul claro */
+}
+
+.reset:hover {
+  background: #2563eb; /* Azul más oscuro */
+}

@@ -1,0 +1,57 @@
+/* Contenedor principal del contador, centrado vertical y horizontalmente */
+.counter-container {
+  display: flex; /* Activa Flexbox */
+  flex-direction: column; /* Acomoda elementos en columna */
+  align-items: center; /* Centra horizontalmente */
+  justify-content: center; /* Centra verticalmente */
+  min-height: 100vh; /* Altura mínima del viewport completo */
+  background-color: #f0f0f0; /* Fondo gris claro */
+  padding: 20px; /* Espacio interno */
+  font-family: Arial, sans-serif; /* Fuente del texto */
+}
+
+/* Estilo para el título del contador */
+.counter-title {
+  font-size: 36px; /* Tamaño grande */
+  font-weight: bold; /* Negrita */
+  margin-bottom: 20px; /* Separación inferior */
+  color: #333; /* Texto gris oscuro */
+}
+
+/* Grupo de botones (contenedor) */
+.button-group {
+  margin-bottom: 15px; /* Separación inferior */
+}
+
+/* Estilo base para todos los botones */
+.btn {
+  padding: 10px 20px; /* Espaciado interno */
+  margin: 5px; /* Margen entre botones */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  font-size: 16px;
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+}
+
+/* Estilo del botón Incrementar (verde) */
+.btn.increment {
+  background-color: #4caf50; /* Verde */
+  color: white; /* Texto blanco */
+}
+
+/* Estilo del botón Decrementar (rojo) */
+.btn.decrement {
+  background-color: #f44336; /* Rojo */
+  color: white;
+}
+
+/* Estilo del botón Reset (gris) */
+.btn.reset {
+  background-color: #9e9e9e; /* Gris medio */
+  color: white;
+}
+
+/* Efecto hover general para todos los botones */
+.btn:hover {
+  opacity: 0.8; /* Oscurece ligeramente al pasar el mouse */
+}
